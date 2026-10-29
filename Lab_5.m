@@ -1,0 +1,22 @@
+clc;
+clear all;
+close all;
+s1 = input("Enter first signal: ");
+s2 = input("Enter second signal: ");
+y = Conv_user(s1,s2)
+figure;
+subplot(3,1,1);
+stem(s1);
+xlabel("sample");
+ylabel("amplitude");
+title("signal 1");
+subplot(3,1,2);
+stem(s2);
+xlabel("sample");
+ylabel("amplitude");
+title("signal 2");
+subplot(3,1,3);
+stem(y);
+xlabel("N");
+ylabel("amplitude");
+title("Convolution");

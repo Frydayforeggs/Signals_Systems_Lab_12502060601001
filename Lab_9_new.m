@@ -1,0 +1,10 @@
+clc;
+clear all;
+close all;
+syms n;
+x = sin(n);
+fz = ztrans(x);
+pretty(fz);
+sys = tf([1], [1 2 1]);
+pzplot(sys);
+grid on;
